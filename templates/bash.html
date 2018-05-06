@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+    {% block css %}{% endblock %}
+<body>
+<h3>农业环境数据管理系统</h3>
+    {% include 'nav.html' %}
+    <div></div>
+
+    {% block content %}{% endblock %}   <!-- 网页内容 -->
+
+    {% block d3 %}{% endblock %}        <!-- d3.js script -->
+
+    {% block footer %}{% endblock %}    <!-- footer -->
+</body>
+</html>
